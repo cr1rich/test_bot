@@ -2,8 +2,8 @@ import logging
 from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 
-# Твой токен от @BotFather
-API_TOKEN = '8770724203:AAEEi1hHEM9KW89LvNnaxaJBUie8c1_dFdQ'
+import os
+API_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
 
 # Настройка логов (чтобы видеть ошибки)
 logging.basicConfig(level=logging.INFO)
